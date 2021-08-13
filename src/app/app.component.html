@@ -1,0 +1,36 @@
+<div class="testbox" >
+  <form action="/" style="width: 960px; margin: auto;">
+    <div class="banner">
+      <h1>Cambio de Divisas</h1>
+      
+
+    </div>
+    <div class="colums">
+      <div class="item">
+        <label for="fname"> Euro € <span>*</span></label>
+        <input id="fname" class="inpt" [(ngModel)] ="this.euro" type="number" name="fname" required/>
+        <!--<label>{{time}}</label>-->
+      </div>
+      <div class="item">
+        <label for="lname"> Dolares $</label>
+        <span style="margin-top: .25rem;
+        display: block;
+        position: relative;  ">
+      
+        <input id="lname" class="inpt"  disabled [(ngModel)] ="this.dolar" type="text" name="lname" required/>
+        </span>
+      
+      </div>
+     
+    </div>
+    <div class="btn-block">
+      <button (click)="ChangeDivisas()" type="submit">Enviar</button>
+    </div>
+  </form>
+</div>
+
+
+
+
+
+<router-outlet></router-outlet>
